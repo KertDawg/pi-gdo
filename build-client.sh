@@ -5,6 +5,7 @@
 #
 
 
-cd client
+pushd client
+npm install
 quasar build
-cd ..
+popd
