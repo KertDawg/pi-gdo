@@ -1,17 +1,29 @@
 <template>
   <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+    <q-btn color="primary" @click="ActivateClick">Activate</q-btn>
   </q-page>
 </template>
 
 <script>
-import { defineComponent } from 'vue'
 
-export default defineComponent({
-  name: 'IndexPage'
-})
+import api from "../utils/api";
+
+export default {
+  name: "PageIndex",
+
+  mounted()
+  {
+  },
+
+  methods:
+  {
+    ActivateClick: function()
+    {
+      api.PushTheButton().then(r => {
+        console.log("PushTheButton: " + r);
+      });
+    },
+  },
+};
+
 </script>

@@ -2,7 +2,7 @@
   "name": "pi-gdo-webclient",
   "version": "0.0.1",
   "description": "A Garage Door Opener program for the Raspberry Pi",
-  "productName": "Pi GDO Web Client",
+  "productName": "Pi GDO",
   "author": "Kertis Henderson <kertishenderson@gmail.com>",
   "private": true,
   "scripts": {
