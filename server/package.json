@@ -1,0 +1,15 @@
+{
+  "name": "pi-gdo-server",
+  "version": "1.0.0",
+  "description": "A Garage Door Opener program for the Raspberry Pi",
+  "main": "start.js",
+  "scripts": {
+    "run": "node start.js",
+    "service": "pm2 start start.js"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
