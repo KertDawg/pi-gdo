@@ -1,6 +1,15 @@
 <template>
-  <q-page class="flex flex-center">
-    <q-btn color="primary" @click="ActivateClick">Activate</q-btn>
+  <q-page class="IndexPage">
+    <div class="row" style="width: 100%;">
+      <div class="col-xs-12 q-pt-md">
+        <q-btn color="primary" @click="ActivateClick">Activate</q-btn>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 q-pt-md">
+        <Video URL="http://192.168.1.50:8080/101/mjpg/stream" />
+      </div>
+    </div>
   </q-page>
 </template>
 
@@ -27,3 +36,12 @@ export default {
 };
 
 </script>
+
+<style scoped>
+
+.IndexPage
+{
+  text-align: center;
+}
+
+</style>

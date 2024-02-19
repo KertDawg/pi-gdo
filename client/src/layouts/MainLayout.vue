@@ -1,13 +1,5 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
-        <q-toolbar-title>
-          Pi GDO
-        </q-toolbar-title>
-      </q-toolbar>
-    </q-header>
-
+  <q-layout view="lHh Lpr lFf" style="min-height: 200px; height: 200px;">
     <q-page-container>
       <router-view />
     </q-page-container>
